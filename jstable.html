@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style>
+		table {
+		border-collapse: collapse;
+		width: 80%;
+		margin: 10px;
+		}
+		tr:nth-child(even){background-color: #f2f2f2;}
+		tr{ height: 45px;}
+		td, th{border: 1px solid #ddd;}
+		input {margin: 10px;}
+		button {margin-left: 5px;}
+		</style>
+	</head>
+	<body>
+		<input type = "radio" name = "data" value = "big" onclick = "data(this.value)">Big(All)
+		<input type = "radio" name = "data" value = "small" onclick = "data(this.value)">Small(<50)
+		<input type = "radio" name = "data" value = "yours" onclick = "data(this.value)">Yours
+		<button id ="bCreate" onclick = "createTable()">Create table</button><br>
+		<div id = "tables">
+		</div>
+	<script src = "jstable.js"></script>
+	</body>
+</html>
